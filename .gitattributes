@@ -1,0 +1,126 @@
+## Unity ##
+
+# Scripts
+
+# Unity Smart Merge assets
+[attr]unitymerge merge=unityyamlmerge eol=lf
+*.anim unitymerge
+*.asset unitymerge
+*.controller unitymerge
+*.mat unitymerge
+*.meta unitymerge
+*.physicMaterial unitymerge
+*.physicsMaterial2D unitymerge
+*.prefab unitymerge
+*.unity unitymerge
+
+
+## Text Files (Normalized Line Endings) ##
+
+*.txt text
+
+# Code
+*.cs diff=csharp text
+*.shader text
+
+# Script code
+*.ps1 text
+*.cmd text
+*.bat text
+*.sh text
+
+# Config files
+*.xml text
+*.json text
+*.yml text
+*.yaml text
+*.csv text
+*.ini text
+
+# Git files
+.gitconfig text
+.gitattributes text
+
+# Other
+*.md text
+
+
+## LFS-tracked Assets ##
+
+[attr]lfs filter=lfs diff=lfs merge=lfs -text
+
+# Unity-specific
+*.unitypackage lfs
+
+# Images
+*.bmp lfs
+*.exr lfs
+*.gif lfs
+*.jpg lfs
+*.jpeg lfs
+*.png lfs
+*.tif lfs
+*.tga lfs
+
+# Audio
+*.aif lfs
+*.aiff lfs
+*.mp3 lfs
+*.ogg lfs
+*.wav lfs
+
+# Videos
+*.mov lfs
+*.mp4 lfs
+
+# 3D Object
+*.fbx lfs
+*.FBX lfs
+*.obj lfs
+
+# Plugins
+*.dll lfs
+*.mdb lfs
+*.pdb lfs
+
+# MS Office Documents
+*.accdb lfs
+*.doc lfs
+*.docm lfs
+*.docx lfs
+*.xlm lfs
+*.xls lfs
+*.xlsm lfs
+*.xlsx lfs
+*.ppt lfs
+*.pptm lfs
+*.pptx lfs
+
+# Google Documents
+*.gdoc lfs
+*.gsheet lfs
+*.gslides lfs
+*.gdraw lfs
+
+# Asset Project Files
+*.3ds lfs
+*.ai lfs
+*.blend lfs
+*.flp lfs
+*.mb lfs
+*.mus lfs
+*.musx lfs
+*.psd lfs
+*.xcf lfs
+
+# Zipped Contents
+*.7z lfs
+*.a lfs
+*.rar lfs
+*.tar lfs
+*.tar.gz lfs
+*.zip lfs
+
+# Other
+*.pdf lfs
+*.ttf lfs
