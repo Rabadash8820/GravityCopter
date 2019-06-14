@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -25,6 +25,7 @@
   <Target Name="DeleteUnnecessaryBuildOutputs" AfterTargets="AfterBuild">
     <ItemGroup Label="UnnecessaryBuildOutputs">
       <Unnecessary Include="$(OutDir)/$(ProjectName).deps.json" />
+      <Unnecessary Include="$(OutDir)/Sirenix.OdinInspector.Attributes.dll" />
     </ItemGroup>
     <Message Importance="high" Text="Clearing unnecessary build outputs from the Unity Assets/Editor/ folder" />
     <Delete Files="%(Unnecessary.Identity)" />
