@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <PropertyGroup Label="Unity DLL References">
-    <UnityVersion>2018.3.9f1</UnityVersion>
+    <UnityVersion>2019.1.6f1</UnityVersion>
     <ReferenceUnityEngineDll>true</ReferenceUnityEngineDll>
     <ReferenceUnityEngineUiDll>true</ReferenceUnityEngineUiDll>
   </PropertyGroup>

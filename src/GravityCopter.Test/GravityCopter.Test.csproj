@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <PropertyGroup Label="Unity DLL References">
-    <UnityVersion>2018.3.9f1</UnityVersion>
+    <UnityVersion>2019.1.6f1</UnityVersion>
     <ReferenceUnityEngineDll>true</ReferenceUnityEngineDll>
     <ReferenceUnityEngineTestRunnerDll>true</ReferenceUnityEngineTestRunnerDll>
   </PropertyGroup>
