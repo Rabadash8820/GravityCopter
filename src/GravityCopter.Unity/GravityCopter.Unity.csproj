@@ -2,25 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <DebugType>portable</DebugType>   <!-- So that Unity doesn't have to generate .mdb files -->
     <LangVersion>latest</LangVersion>
     <OutputPath>../../$(SolutionName)/Assets/$(SolutionName)/Plugins</OutputPath>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>DEBUG;TRACE;UNITY_ASSERTIONS</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\UnityUtil\UnityUtil\UnityUtil.csproj" />
   </ItemGroup>
 
-  <PropertyGroup Label="Unity DLL References">
+  <PropertyGroup Label="Unity Assembly References">
     <UnityVersion>2019.1.6f1</UnityVersion>
-    <ReferenceUnityEngineDll>true</ReferenceUnityEngineDll>
-    <ReferenceUnityEngineUiDll>true</ReferenceUnityEngineUiDll>
+    <ReferenceUnityEngine>true</ReferenceUnityEngine>
+    <ReferenceUnityEngineUi>true</ReferenceUnityEngineUi>
   </PropertyGroup>
-  <Import Project="../../../UnityUtil/UnityUtil/UnityDllReferences.props"/>
+  <Import Project="../../../UnityUtil/UnityUtil/UnityAssemblyReferences.targets"/>
 
   <Target Name="DeleteUnnecessaryBuildOutputs" AfterTargets="AfterBuild">
     <ItemGroup Label="UnnecessaryBuildOutputs">

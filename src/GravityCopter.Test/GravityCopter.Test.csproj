@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <DebugType>portable</DebugType>   <!-- So that Unity doesn't have to generate .mdb files -->
     <LangVersion>latest</LangVersion>
     <OutputPath>../../$(SolutionName)/Assets/$(SolutionName)/Editor/Tests</OutputPath>
   </PropertyGroup>
@@ -16,12 +15,12 @@
     <ProjectReference Include="..\GravityCopter.Unity\GravityCopter.Unity.csproj" />
   </ItemGroup>
 
-  <PropertyGroup Label="Unity DLL References">
+  <PropertyGroup Label="Unity Assembly References">
     <UnityVersion>2019.1.6f1</UnityVersion>
-    <ReferenceUnityEngineDll>true</ReferenceUnityEngineDll>
-    <ReferenceUnityEngineTestRunnerDll>true</ReferenceUnityEngineTestRunnerDll>
+    <ReferenceUnityEngine>true</ReferenceUnityEngine>
+    <ReferenceUnityEngineTestRunner>true</ReferenceUnityEngineTestRunner>
   </PropertyGroup>
-  <Import Project="../../../UnityUtil/UnityUtil/UnityDllReferences.props"/>
+  <Import Project="../../../UnityUtil/UnityUtil/UnityAssemblyReferences.targets"/>
 
   <Target Name="DeleteUnnecessaryBuildOutputs" AfterTargets="AfterBuild">
     <ItemGroup Label="UnnecessaryBuildOutputs">
