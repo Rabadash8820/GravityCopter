@@ -1,6 +1,6 @@
 # Gravity Copter
 
-A Flabby Bird clone built with Unity, where players navigate by changing the direction of gravity.
+A <cite>Flappy Bird</cite> clone built with Unity, where players navigate by changing the direction of gravity.
 
 ## Controls
 
