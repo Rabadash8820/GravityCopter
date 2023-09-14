@@ -1,6 +1,11 @@
 Logs/
 Library/
 Temp/
+UserSettings/
+
+GravityCopter/**/*.sln
+GravityCopter/**/*.csproj
+GravityCopter/**/.vsconfig
 
 .vs/
 bin/
